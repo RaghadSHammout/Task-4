@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #3FBBC0;
+    --secodary-color: #F7FCFC;
+    --text-color: #000000;
+    --gray-color: #808080;
+}
+
+html {
+    font-family: "roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sec-bg{
+    background-color: var(--secodary-color);
+}
+
+.primary-bg{
+    background-color: var(--primary-color);
+}
+
+.primary-color{
+    color: var(--primary-color);
+}
+.secondary-color{
+    color: var(--secodary-color);
+}
+.gray-color{
+    color: var(--gray-color);
+}
+
+.topbar {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navbar .navbar-nav .active {
+    color: var(--primary-color);
+}
+
+.btn {
+    color: white;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.carousel-caption {
+    border-top: 4px solid var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.793);
+    color: var(--text-color);
+    margin-bottom: 250px;
+}
+
+.carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.863) !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary-color) !important;
+}
+
+.service-icon {
+    height: 80px;
+    width: 80px;
+}
+
+.service-icon i {
+    color: var(--primary-color);
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.departments .nav-link {
+    color: var(--text-color);
+}
+
+.departments .nav-link.active {
+    color: var(--primary-color);
+    border: 0;
+}
+
+.departments .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    background-color: var(--primary-color);
+    top: 0;
+    right: -3px;
+}
+
+.card-body i {
+    border: 2px dotted var(--primary-color);
+    color: var(--primary-color);
+}
+
+.card-body .card-text a {
+    color: var(--primary-color);
+}
