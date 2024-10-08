@@ -1,8 +1,6 @@
 :root {
     --primary-color: #3FBBC0;
     --secodary-color: #F7FCFC;
-    --text-color: #000000;
-    --gray-color: #808080;
 }
 
 html {
@@ -15,6 +13,7 @@ html {
     margin: 0;
     box-sizing: border-box;
 }
+
 .sec-bg{
     background-color: var(--secodary-color);
 }
@@ -26,11 +25,9 @@ html {
 .primary-color{
     color: var(--primary-color);
 }
+
 .secondary-color{
     color: var(--secodary-color);
-}
-.gray-color{
-    color: var(--gray-color);
 }
 
 .topbar {
@@ -42,12 +39,8 @@ html {
     color: var(--primary-color);
 }
 
-.btn {
-    color: white;
-}
-
-.carousel-item {
-    height: 100vh;
+.btn:hover {
+    color: black !important;
 }
 
 .carousel-item img {
@@ -55,10 +48,9 @@ html {
 }
 
 .carousel-caption {
+    height: max-content;
     border-top: 4px solid var(--primary-color);
     background-color: rgba(255, 255, 255, 0.793);
-    color: var(--text-color);
-    margin-bottom: 250px;
 }
 
 .carousel-indicators button {
@@ -67,8 +59,8 @@ html {
     height: 10px !important;
     border-radius: 50% !important;
     margin: 0 5px;
-    transition: background-color 0.3s ease;
 }
+
 
 .carousel-indicators button.active {
     background-color: var(--primary-color) !important;
@@ -89,23 +81,19 @@ html {
     background-color: var(--primary-color);
 }
 
-.departments .nav-link {
-    color: var(--text-color);
-}
-
 .departments .nav-link.active {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     border: 0;
 }
 
 .departments .nav-link.active::after {
     content: "";
     position: absolute;
-    width: 4px;
+    width: 3px;
     height: 30px;
     background-color: var(--primary-color);
     top: 0;
-    right: -3px;
+    right: -1px;
 }
 
 .card-body i {
